@@ -1,0 +1,19 @@
+{% extends "cw_app/movies.html" %}
+{% extends "cw_app/movies.details" %)
+
+{% block subtitle %}
+{{movies.movie_title}}
+{% endblock %}
+{% block content %
+    <p>
+        Movie Title: {{movies.movie_title}}
+    </p>
+    <p>
+        Movie Details: {{movies.movie_details}}
+    </p>
+    <p>
+        Movie Synopsis: {{movies.movie_synopsis}}
+    </p>
+
+
+{% endblock %}
